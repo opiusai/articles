@@ -1,0 +1,24 @@
+id: "001"
+title: "Why AI Providers Shouldn’t Grade Their Own Bills"
+slug: "why-ai-providers-shouldnt-grade-their-own-bills"
+archive_month: "2026-09"
+publication_date: null
+
+published:
+  dev: null
+  medium: null
+  hashnode: null
+  huggingface: null
+  linkedin: null
+  x: null
+
+media:
+  - file: "media/hero.png"
+    purpose: "Article header image"
+  - file: "media/attempts-overview.png"
+    purpose: "Three-attempt receipt illustration"
+
+notes:
+  - "The Markdown and DOCX versions differ in wording. Both are retained for review."
+  - "The archive month is based on the DOCX modification metadata and supplied media timestamps; the publication date is unknown."
+  - "No existing public URL for either image was found in the supplied files."

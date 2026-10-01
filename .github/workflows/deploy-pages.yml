@@ -1,0 +1,52 @@
+name: Deploy article media to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out archive
+        uses: actions/checkout@v4
+
+      - name: Assemble media-only site
+        run: |
+          rm -rf _site
+          mkdir -p _site
+          while IFS= read -r -d '' media_dir; do
+            relative_path="${media_dir#articles/}"
+            mkdir -p "_site/${relative_path}"
+            cp -R "${media_dir}/." "_site/${relative_path}/"
+          done < <(find articles -type d -name media -print0)
+          touch _site/.nojekyll
+
+      - name: Set up Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload media-only Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    needs: build
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
