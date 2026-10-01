@@ -34,6 +34,8 @@ jobs:
 
       - name: Set up Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
 
       - name: Upload media-only Pages artifact
         uses: actions/upload-pages-artifact@v3
