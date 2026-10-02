@@ -20,13 +20,7 @@ That matters even when the user receives an answer. A recurring failure can add 
 
 The first step is to make each attempt findable. When routing a request through Inferock, supply a unique `x-request-id` and record it in your application logs. If the application retries, give that attempt its own request ID and associate both IDs with the same application task.
 
-For example, your application might record:
-
-```text
-Task: document-summary-1842
-  Attempt 1 → request ID: summary-1842-a1 → application recorded failure
-  Attempt 2 → request ID: summary-1842-a2 → application accepted response
-```
+![One document-summary task connected to two separately recorded attempts: the first marked with an X, the retry with a check.](https://opiusai.github.io/articles/2026/10/002-the-retry-worked-what-broke-the-first-time/media/retry-trace.svg)
 
 Your application keeps the task-to-attempt association; Inferock records each routed call under its request ID. Together, those records let you inspect the failed attempt and its retry without mistaking the final answer for the full history of the task.
 

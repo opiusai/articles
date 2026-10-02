@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="640" viewBox="0 0 1600 640" role="img" aria-labelledby="title desc">
+  <title id="title">Two recorded attempts for one task</title>
+  <desc id="desc">A single application task leads to an unsuccessful first call and a successful retry. Each attempt has its own request ID and individual record.</desc>
+  <defs>
+    <linearGradient id="background" x2="1" y2="1">
+      <stop stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f7faff"/>
+    </linearGradient>
+    <pattern id="grid" width="80" height="80" patternUnits="userSpaceOnUse">
+      <path d="M80 0H0V80" fill="none" stroke="#eaf1fa" stroke-width="1"/>
+    </pattern>
+    <filter id="shadow" x="-15%" y="-25%" width="130%" height="155%">
+      <feDropShadow dx="0" dy="10" stdDeviation="16" flood-color="#0b315f" flood-opacity=".07"/>
+    </filter>
+  </defs>
+
+  <rect width="1600" height="640" rx="24" fill="url(#background)"/>
+  <rect width="1600" height="640" rx="24" fill="url(#grid)" opacity=".55"/>
+  <text x="100" y="91" fill="#006bf0" font-family="Arial,Helvetica,sans-serif" font-size="18" font-weight="700" letter-spacing="3">INFEROCK WATCH</text>
+
+  <g filter="url(#shadow)">
+    <rect x="100" y="203" width="342" height="120" rx="22" fill="#ffffff" stroke="#dce9fa" stroke-width="2"/>
+  </g>
+  <rect x="127" y="232" width="38" height="48" rx="6" fill="#e9f3ff" stroke="#9bc7ff" stroke-width="2"/>
+  <path d="M137 246h18M137 256h18M137 266h13" stroke="#2982ed" stroke-width="2" stroke-linecap="round"/>
+  <text x="185" y="247" fill="#60738d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" letter-spacing="2">TASK</text>
+  <text x="185" y="281" fill="#082047" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700">document-summary</text>
+  <text x="185" y="305" fill="#60738d" font-family="Arial,Helvetica,sans-serif" font-size="17">#1842</text>
+
+  <path d="M442 263H696" fill="none" stroke="#82baff" stroke-width="4" stroke-linecap="round"/>
+  <path d="M750 263H1125" fill="none" stroke="#abcdf8" stroke-width="4" stroke-linecap="round" stroke-dasharray="4 13"/>
+  <path d="m1118 254 12 9-12 9" fill="none" stroke="#87b9f7" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <circle cx="722" cy="263" r="42" fill="#fff3f8" stroke="#eab3ce" stroke-width="2"/>
+  <path d="m709 250 26 26m0-26-26 26" stroke="#c34482" stroke-width="6" stroke-linecap="round"/>
+  <circle cx="1156" cy="263" r="42" fill="#edf5ff" stroke="#a2cbff" stroke-width="2"/>
+  <path d="m1139 264 12 12 23-26" fill="none" stroke="#0876ee" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <path d="M722 305v71M1156 305v71" fill="none" stroke="#ccdaed" stroke-width="2"/>
+  <circle cx="722" cy="376" r="4" fill="#c34482"/>
+  <circle cx="1156" cy="376" r="4" fill="#0876ee"/>
+
+  <g filter="url(#shadow)">
+    <rect x="545" y="392" width="354" height="154" rx="19" fill="#ffffff" stroke="#e3eaf4" stroke-width="2"/>
+    <rect x="979" y="392" width="354" height="154" rx="19" fill="#ffffff" stroke="#e3eaf4" stroke-width="2"/>
+  </g>
+  <rect x="575" y="419" width="52" height="26" rx="13" fill="#fff0f7"/>
+  <text x="601" y="438" fill="#ad326d" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" text-anchor="middle">A1</text>
+  <rect x="1009" y="419" width="52" height="26" rx="13" fill="#eaf4ff"/>
+  <text x="1035" y="438" fill="#076cda" font-family="Arial,Helvetica,sans-serif" font-size="15" font-weight="700" text-anchor="middle">A2</text>
+  <text x="575" y="486" fill="#09244a" font-family="Consolas,Monaco,monospace" font-size="23" font-weight="600">summary-1842-a1</text>
+  <text x="1009" y="486" fill="#09244a" font-family="Consolas,Monaco,monospace" font-size="23" font-weight="600">summary-1842-a2</text>
+  <path d="M575 511h155m-155 14h221M1009 511h155m-155 14h221" fill="none" stroke="#dce6f3" stroke-width="4" stroke-linecap="round"/>
+</svg>
