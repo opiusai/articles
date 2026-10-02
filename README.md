@@ -15,3 +15,8 @@ The Pages workflow copies only `media/` directories into its deployment artifact
 - `articles/2026/09/001-why-ai-providers-shouldnt-grade-their-own-bills/`
 - The month reflects the September 2026 source revision. No publication date or already published media URL was found in the supplied files.
 - The Markdown and DOCX contain different text. Both are preserved; compare them before publishing a final version.
+
+## Article 2
+
+- `articles/2026/10/002-the-retry-worked-what-broke-the-first-time/`
+- The archive month reflects its October 2026 draft and visual assets; no publication date or external publication URL has been provided.

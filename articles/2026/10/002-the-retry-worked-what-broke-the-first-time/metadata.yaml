@@ -1,0 +1,22 @@
+id: "002"
+title: "The Retry Worked. What Broke the First Time?"
+slug: "the-retry-worked-what-broke-the-first-time"
+archive_month: "2026-10"
+publication_date: null
+
+published:
+  dev: null
+  medium: null
+  hashnode: null
+  huggingface: null
+  linkedin: null
+  x: null
+
+media:
+  - file: "media/hero.png"
+    purpose: "Article title card"
+  - file: "media/attempt-trace.svg"
+    purpose: "Application task and request attempt trace"
+
+notes:
+  - "No publication date or external publication URL has been provided."

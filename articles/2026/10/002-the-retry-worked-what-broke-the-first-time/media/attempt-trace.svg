@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="980" viewBox="0 0 1600 980" role="img" aria-labelledby="title desc">
+  <title id="title">One task, two inference attempts</title>
+  <desc id="desc">An application task is correlated in the application's own logs with two unique request IDs. The first call fails and the second returns a response the application accepts. Inferock Watch lets the developer inspect each call in Calls and inspect linked evidence in Proof when available.</desc>
+  <defs>
+    <pattern id="grid" width="72" height="72" patternUnits="userSpaceOnUse">
+      <path d="M72 0H0V72" fill="none" stroke="#edf3fc" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="wash" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#ffffff"/>
+      <stop offset="1" stop-color="#f5f9ff"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="150%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#34577f" flood-opacity=".08"/>
+    </filter>
+  </defs>
+  <rect width="1600" height="980" rx="30" fill="url(#wash)"/>
+  <rect width="1600" height="980" rx="30" fill="url(#grid)"/>
+  <rect width="1600" height="10" rx="5" fill="#0074ff"/>
+  <text x="92" y="99" fill="#0074ff" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="2">INFEROCK WATCH · CALL TRACE</text>
+  <text x="92" y="177" fill="#011636" font-family="Inter,Arial,sans-serif" font-size="58" font-weight="750" letter-spacing="-1.8">One task. Two attempts.</text>
+  <text x="96" y="222" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="25">A retry can recover the user request. Keep the first failure traceable.</text>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="270" width="1416" height="134" rx="24" fill="#ffffff" stroke="#d8e6f8" stroke-width="2"/>
+    <rect x="92" y="270" width="10" height="134" rx="5" fill="#0074ff"/>
+  </g>
+  <text x="136" y="319" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="18" font-weight="700" letter-spacing="1">YOUR APPLICATION LOGS</text>
+  <text x="136" y="367" fill="#011636" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="29" font-weight="700">task_id: document-summary-1842</text>
+  <text x="1002" y="348" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="21">Correlate both call IDs here</text>
+  <circle cx="1450" cy="337" r="12" fill="#0074ff"/>
+
+  <path d="M800 404V451M800 451H430V476M800 451H1170V476" fill="none" stroke="#7fb6ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <circle cx="800" cy="451" r="8" fill="#0074ff"/>
+
+  <g filter="url(#shadow)">
+    <rect x="92" y="478" width="674" height="274" rx="24" fill="#ffffff" stroke="#f0d7e4" stroke-width="2"/>
+    <rect x="834" y="478" width="674" height="274" rx="24" fill="#ffffff" stroke="#d8e6f8" stroke-width="2"/>
+  </g>
+  <rect x="92" y="478" width="8" height="274" rx="4" fill="#c24482"/>
+  <rect x="834" y="478" width="8" height="274" rx="4" fill="#0074ff"/>
+
+  <circle cx="145" cy="535" r="21" fill="#fff2f8" stroke="#c24482" stroke-width="2"/>
+  <path d="M145 523v14m0 8v1" stroke="#b72f73" stroke-width="4" stroke-linecap="round"/>
+  <text x="184" y="543" fill="#b72f73" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="1">ATTEMPT 01 · FAILURE</text>
+  <text x="138" y="596" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1">UNIQUE REQUEST ID</text>
+  <text x="138" y="636" fill="#011636" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="24" font-weight="700">summary-1842-a1</text>
+  <line x1="138" y1="665" x2="713" y2="665" stroke="#edf1f7" stroke-width="2"/>
+  <text x="138" y="704" fill="#011636" font-family="Inter,Arial,sans-serif" font-size="19">Calls: route, model, failure class, timing</text>
+  <text x="138" y="733" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="16">Proof: linked evidence, where available</text>
+
+  <circle cx="887" cy="535" r="21" fill="#edf5ff" stroke="#0074ff" stroke-width="2"/>
+  <path d="m877 535 7 7 14-16" fill="none" stroke="#0074ff" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="926" y="543" fill="#0074ff" font-family="Inter,Arial,sans-serif" font-size="20" font-weight="700" letter-spacing="1">ATTEMPT 02 · RECOVERED</text>
+  <text x="880" y="596" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1">UNIQUE REQUEST ID</text>
+  <text x="880" y="636" fill="#011636" font-family="ui-monospace,SFMono-Regular,Consolas,monospace" font-size="24" font-weight="700">summary-1842-a2</text>
+  <line x1="880" y1="665" x2="1455" y2="665" stroke="#edf1f7" stroke-width="2"/>
+  <text x="880" y="704" fill="#011636" font-family="Inter,Arial,sans-serif" font-size="19">Calls: route, model, usage, timing</text>
+  <text x="880" y="733" fill="#526783" font-family="Inter,Arial,sans-serif" font-size="16">Your app records whether it accepted the result</text>
+
+  <g>
+    <rect x="92" y="800" width="1416" height="106" rx="22" fill="#edf5ff" stroke="#d8e6f8" stroke-width="2"/>
+    <text x="132" y="845" fill="#0074ff" font-family="Inter,Arial,sans-serif" font-size="17" font-weight="700" letter-spacing="1">INFEROCK WATCH</text>
+    <text x="132" y="881" fill="#011636" font-family="Inter,Arial,sans-serif" font-size="21" font-weight="600">Find each attempt in Calls by request ID · Follow linked findings to Proof</text>
+  </g>
+  <text x="96" y="950" fill="#6a7f99" font-family="Inter,Arial,sans-serif" font-size="15">The task-to-attempt relationship is maintained in your application logs; call records are inspected individually.</text>
+</svg>
