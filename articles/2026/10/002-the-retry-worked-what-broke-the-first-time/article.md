@@ -2,7 +2,7 @@
 
 *How we use Inferock Watch to make failed inference calls easier to investigate—even when the application recovers.*
 
-![Inferock title card: The Retry Worked. What Broke the First Time?](media/hero.png)
+![Inferock title card: The Retry Worked. What Broke the First Time?](https://opiusai.github.io/articles/2026/10/002-the-retry-worked-what-broke-the-first-time/media/hero.png)
 
 Imagine your application asks a model to summarize a document. The first attempt fails. Your retry logic kicks in, the second attempt returns an answer, and the user gets their summary.
 
@@ -28,9 +28,7 @@ Task: document-summary-1842
   Attempt 2 → request ID: summary-1842-a2 → application accepted response
 ```
 
-That association is something your application maintains. It gives you a way to investigate the attempts together without treating the final answer as the complete history of the task.
-
-![A task ID in your application logs connects two unique request IDs; Inferock Watch lets you inspect each call in Calls and linked evidence in Proof.](media/attempt-trace.svg)
+Your application keeps the task-to-attempt association; Inferock records each routed call under its request ID. Together, those records let you inspect the failed attempt and its retry without mistaking the final answer for the full history of the task.
 
 With Watch, you connect your provider account and send calls through the Inferock gateway using an Inferock key. Successful calls preserve the upstream HTTP status and provider response content. Your application receives the model response, while measurement happens alongside the request flow. The [first-call guide](https://inferock.ai/docs/first-call/) covers the request ID and gateway behavior.
 

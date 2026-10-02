@@ -15,8 +15,6 @@ published:
 media:
   - file: "media/hero.png"
     purpose: "Article title card"
-  - file: "media/attempt-trace.svg"
-    purpose: "Application task and request attempt trace"
 
 notes:
   - "No publication date or external publication URL has been provided."
