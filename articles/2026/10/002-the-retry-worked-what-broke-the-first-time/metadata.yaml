@@ -15,7 +15,7 @@ published:
 media:
   - file: "media/hero.png"
     purpose: "Article title card"
-  - file: "media/retry-trace.svg"
+  - file: "media/attempt-records.svg"
     purpose: "Minimal visual of one task and two distinct attempt records"
 
 notes:
