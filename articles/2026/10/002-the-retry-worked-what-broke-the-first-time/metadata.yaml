@@ -12,6 +12,15 @@ published:
   linkedin: null
   x: null
 
+publication_status:
+  dev: "published"
+  medium: "published"
+  hashnode: "published"
+  huggingface: "published"
+  linkedin: "published"
+  x: "published"
+publication_status_updated: "2026-10-05"
+
 media:
   - file: "media/hero.png"
     purpose: "Article title card"
@@ -19,4 +28,4 @@ media:
     purpose: "Minimal visual of one task and two distinct attempt records"
 
 notes:
-  - "No publication date or external publication URL has been provided."
+  - "Publication statuses confirmed by the user on 2026-10-05; exact publication dates and URLs have not been supplied. The published fields are reserved for publication URLs."

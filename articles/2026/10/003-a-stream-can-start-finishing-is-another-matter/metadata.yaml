@@ -12,10 +12,20 @@ published:
   linkedin: null
   x: null
 
+publication_status:
+  dev: "published"
+  medium: "published"
+  hashnode: "published"
+  huggingface: "blocked"
+  linkedin: "published"
+  x: "published"
+publication_status_updated: "2026-10-05"
+
 media:
   - file: "media/hero.png"
     purpose: "Article title card"
 
 notes:
   - "Latest user-supplied draft preserved with Markdown paragraph spacing; title matches the revised header image."
-  - "No publication date or external publication URL has been provided."
+  - "Publication statuses confirmed by the user on 2026-10-05; exact publication dates and URLs have not been supplied. The published fields are reserved for publication URLs."
+  - "Hugging Face publication was blocked; the reason is unknown."

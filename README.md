@@ -8,6 +8,8 @@ Articles use `articles/YYYY/MM/{id}-{slug}/`. The three digit ID follows the exi
 
 Each article uses `article.md` as its main text source, `article.docx` when available, `metadata.yaml`, and a `media/` directory for public assets. Supporting material that is not part of the public article belongs in `source/`.
 
+Metadata uses `published` for platform URLs and `publication_status` for reported publishing outcomes. A null URL means no link has been supplied; refer to the status field to see whether the article was published. `publication_status_updated` records when the status was reported, not the publication date.
+
 The Pages workflow copies only `media/` directories into its deployment artifact. Markdown, DOCX, metadata, and source files remain in the repository archive and are not deployed.
 
 ## Current article
@@ -19,9 +21,9 @@ The Pages workflow copies only `media/` directories into its deployment artifact
 ## Article 2
 
 - `articles/2026/10/002-the-retry-worked-what-broke-the-first-time/`
-- The archive month reflects its October 2026 draft and visual assets; no publication date or external publication URL has been provided.
+- Published on DEV, Medium, Hashnode, Hugging Face, LinkedIn, and X, as confirmed by the user on October 5, 2026. Exact publication dates and URLs have not been supplied.
 
 ## Article 3
 
 - `articles/2026/10/003-a-stream-can-start-finishing-is-another-matter/`
-- User-supplied final article and its header image, archived in October 2026. No publication date or external publication URL has been provided.
+- User-supplied final article and its header image, archived in October 2026. Published on DEV, Medium, Hashnode, LinkedIn, and X, as confirmed by the user on October 5, 2026. Hugging Face publication was blocked for an unknown reason. Exact publication dates and URLs have not been supplied.
