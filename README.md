@@ -20,3 +20,8 @@ The Pages workflow copies only `media/` directories into its deployment artifact
 
 - `articles/2026/10/002-the-retry-worked-what-broke-the-first-time/`
 - The archive month reflects its October 2026 draft and visual assets; no publication date or external publication URL has been provided.
+
+## Article 3
+
+- `articles/2026/10/003-a-stream-can-start-finishing-is-another-matter/`
+- User-supplied final article and its header image, archived in October 2026. No publication date or external publication URL has been provided.

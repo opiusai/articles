@@ -1,0 +1,21 @@
+Generation mode: built-in image_gen
+
+Use case: ads-marketing.
+Asset type: finished editorial header/title image for an Inferock engineering article, landscape 16:9.
+Create a NEW article cover. Image 1 is a style reference for the existing Inferock article series; image 2 is the actual Inferock logo mark to preserve accurately. Replace the old article's topic and headline entirely.
+
+White-dominant background, dark navy #011636 headline, electric blue #0074ff and restrained pink #c34482 accents. Modern, sleek, thoughtful technical editorial design. Very faint grid and a soft localized blue wash; ample deliberate margins, but enough visual substance to feel finished. Crisp flat graphic design with subtle depth only. No rivers or water.
+
+Top left: exact original pink Inferock mark with the word "Inferock" in dark navy. Small blue eyebrow "INFEROCK ENGINEERING".
+Left two-thirds: strong, beautifully typeset headline in a bold modern sans serif. Render this exact complete title in reading order, including punctuation:
+"A Stream (The LLM Kind, Not the Water Kind) Can Start. Finishing Is Another Matter."
+Make the parenthetical smaller and lighter to create a witty aside while keeping it legible. A possible reading-order layout:
+A Stream
+(The LLM Kind, Not the Water Kind)
+Can Start. Finishing
+Is Another Matter.
+The main title should dominate the image, not a background placeholder. Do not remove the parenthetical or any words. Use consistent crisp typography and balanced line spacing.
+
+Right third: one compact polished illustration of an interrupted LLM output stream. Three or four blue token-like segments move along a fine path into a small floating white response/terminal panel. The panel contains a few short navy code-like lines that visibly stop mid-output at a pink cursor; a final pale outlined segment sits disconnected across a small gap. A tiny pink break mark on the route conveys interruption. This should feel like a designed technical editorial visual, not a screenshot or explanatory flowchart. No fake dashboard numbers, no tables, no long labels or extra copy. The diagram supports the headline and does not compete with it.
+Subtle fine blue bottom rule or series accent as in the reference. Restrained rounded corners, clean alignment. Minimal but not bare; no oversized blank half. No watermark.
+
