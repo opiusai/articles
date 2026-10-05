@@ -1,5 +1,5 @@
 id: "003"
-title: "A Stream (The LLM Kind, Not the Water Kind) Can Start. Finishing Is Another Matter."
+title: "A Stream (LLM Stream, not Water) Can Start. Finishing Is Another Matter."
 slug: "a-stream-can-start-finishing-is-another-matter"
 archive_month: "2026-10"
 publication_date: null
@@ -17,5 +17,5 @@ media:
     purpose: "Article title card"
 
 notes:
-  - "User-supplied final article preserved; the published header-image reference was added."
+  - "Latest user-supplied draft preserved with Markdown paragraph spacing; title matches the revised header image."
   - "No publication date or external publication URL has been provided."
