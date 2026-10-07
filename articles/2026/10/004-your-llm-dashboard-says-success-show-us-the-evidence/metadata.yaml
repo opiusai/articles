@@ -16,6 +16,8 @@ published:
 media:
   - file: "media/hero.png"
     purpose: "Article title card"
+  - file: "media/hero-full-size.png"
+    purpose: "Original 16:9 article header before the 5:2 layout revision"
   - file: "media/evidence-trail.png"
     purpose: "Conceptual illustration of a declared tool contract, an incomplete response, and an inspectable finding"
 

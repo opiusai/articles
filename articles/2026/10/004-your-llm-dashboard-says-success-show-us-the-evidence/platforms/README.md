@@ -28,6 +28,7 @@ The body-only Markdown has no duplicate article title or cover. The main `../art
 ## Public media URLs
 
 - Header: https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/hero.png
+- Original 16:9 header: https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/hero-full-size.png
 - Evidence image: https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/evidence-trail.png
 
 ## Format references
