@@ -27,3 +27,8 @@ The Pages workflow copies only `media/` directories into its deployment artifact
 
 - `articles/2026/10/003-a-stream-can-start-finishing-is-another-matter/`
 - User-supplied final article and its header image, archived in October 2026. Published on DEV, Medium, Hashnode, LinkedIn, and X, as confirmed by the user on October 5, 2026. Hugging Face publication was blocked for an unknown reason. Exact publication dates and URLs have not been supplied.
+
+## Article 4
+
+- `articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/`
+- Draft article following one tool call through Inferock Watch, Calls, and Proof, with a 5:2 header and an in-article evidence illustration. Article text remains in the archive; the images are served through GitHub Pages.

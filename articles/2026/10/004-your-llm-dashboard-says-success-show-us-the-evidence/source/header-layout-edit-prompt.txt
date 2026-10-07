@@ -1,0 +1,6 @@
+Generator: built-in image_gen
+Edit target: media/hero.png
+Requested layout: 5:2 canvas or centered 5:2 content-safe region, with consistent left-aligned headline.
+
+undefined
+

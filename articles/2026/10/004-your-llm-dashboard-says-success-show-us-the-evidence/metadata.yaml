@@ -1,0 +1,27 @@
+id: "004"
+title: "Your LLM Dashboard Says “Success.” Show Us the Evidence."
+slug: "your-llm-dashboard-says-success-show-us-the-evidence"
+archive_month: "2026-10"
+publication_date: null
+status: "draft"
+
+published:
+  dev: null
+  medium: null
+  hashnode: null
+  huggingface: null
+  linkedin: null
+  x: null
+
+media:
+  - file: "media/hero.png"
+    purpose: "Article title card"
+  - file: "media/evidence-trail.png"
+    purpose: "Conceptual illustration of a declared tool contract, an incomplete response, and an inspectable finding"
+
+notes:
+  - "Draft follows one illustrative tool call through Inferock Watch, Calls, and Proof."
+  - "Images are editorial illustrations, not product screenshots or production measurements."
+  - "Development documentation checked on 2026-10-07; no live gateway test was performed."
+  - "Publication dates and external publication URLs have not been supplied."
+  - "Header revised with a common headline left edge and a 5:2 landscape composition for social posting."
