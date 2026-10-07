@@ -1,8 +1,4 @@
-# Your LLM Dashboard Says “Success.” Show Us the Evidence.
-
 *Following one request through Inferock, from a provider response to a finding an engineer can actually inspect.*
-
-![Inferock article header: Your LLM Dashboard Says “Success.” Show Us the Evidence.](https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/hero.png)
 
 Your agent needs to look up a customer’s account. It asks the model to call `lookup_account`, passing the account ID along with the other arguments.
 

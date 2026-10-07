@@ -2,8 +2,6 @@
 
 *Following one request through Inferock, from a provider response to a finding an engineer can actually inspect.*
 
-![Inferock article header: Your LLM Dashboard Says “Success.” Show Us the Evidence.](https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/hero.png)
-
 Your agent needs to look up a customer’s account. It asks the model to call `lookup_account`, passing the account ID along with the other arguments.
 
 The provider returns HTTP 200. The response arrives. The JSON parses.
@@ -97,8 +95,6 @@ Keep those answers attached to the same request. An application log saying “va
 
 The docs point you to Proof for finding evidence and proof packets. That’s where you move from “we counted a failure” to “here’s what supports the finding.”
 
-![Illustrative evidence trail: a required account_id field in the contract, its absence in the response, and the corresponding finding.](https://opiusai.github.io/articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/media/evidence-trail.png)
-
 *Illustration only: the declared contract requires `account_id`, the response omits it, and the finding connects the two. This is not a product screenshot or a measured customer call.*
 
 The explanation should be refreshingly boring: the arguments parsed, the schema required `account_id`, and the returned object didn’t contain it.
@@ -145,7 +141,7 @@ That’s enough to start doing useful work: check the tool definition and reques
 
 We still have to do the engineering. Sadly, the dashboard has not volunteered.
 
-This is what we mean by accountable inference at Inferock: route the call, attach observable evidence, and make the outcome inspectable, including the limits of what that evidence proves.
+This is what we mean by accountable inference at Inferock: route the call, attach observable evidence, and make the outcome inspectable—including the limits of what that evidence proves.
 
 To follow the same path with your own provider account, start with the [Inferock Watch quickstart](https://inferock.ai/docs/quickstart/) and find your first request in Calls.
 
