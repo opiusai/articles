@@ -62,10 +62,9 @@ li { margin: 10px 0; }
 }
 </code></pre>
 <p>The returned arguments are valid JSON. They’re not valid against this schema.</p>
-<p>That gives us something specific to point at: <code>account_id</code> is required, and it’s missing. No debate about whether the response seemed helpful. No vibes-based adjudication.</p>
+<p>That gives us something specific to point at: <code>account_id</code> is required, and it’s missing. No debate about whether the response seemed helpful. No adjudication by vibes.</p>
 <p>But the requirement has to be declared before the check means anything. If your application needs an account ID and never says so, an observer can’t reliably discover that expectation by staring harder at <code>region</code> and <code>include_history</code>.</p>
 <p>Your application also needs to enforce the contract. Reject invalid arguments before executing the tool. A failure record helps you investigate what happened; it doesn’t replace validation at the execution boundary.</p>
-<p>Observability is useful. It is not a permission slip to run broken inputs.</p>
 <h2>Give the request a trail</h2>
 <p>We’ll use Inferock Watch for this walkthrough. You connect your existing provider key, then authenticate gateway requests with a separate Inferock key. Your provider account still serves the inference.</p>
 <p>Two keys, two jobs:</p>
@@ -79,10 +78,10 @@ li { margin: 10px 0; }
 x-governance-provider: openai
 x-request-id: account-lookup-001
 </code></pre>
-<p>Those headers handle authentication, routing, and request identity. They are not a complete tool-call request. Your body still needs the model, messages, and tool definition.</p>
-<p>Use the gateway base URL from your account settings, and give each new request a unique ID. That ID is how you connect an application event to the measured call later, rather than squinting at timestamps and hoping for the best. The <a href="https://inferock.ai/docs/first-call/">first-call guide</a> has complete curl, Python, and Node.js examples.</p>
-<p>For successful calls, the gateway preserves the upstream HTTP status and provider response content. Your application gets the provider’s answer, not an Inferock measurement envelope.</p>
-<p>So yes, our broken account lookup can still come back through the gateway with HTTP 200. We haven’t redefined the status code. We’re adding evidence you can use to judge the output separately.</p>
+<p>Those headers handle authentication, routing, and request identity. A tool call request also needs the model, messages, and tool definition in its body.</p>
+<p>Use the gateway base URL from your account settings, and give each new request a unique ID. That ID is how you connect an application event to the measured call later, rather than squinting at timestamps and hoping for the best. The <a href="https://inferock.ai/docs/first-call/">First call guide</a> has complete curl, Python, and Node.js examples.</p>
+<p>For successful calls, the gateway preserves the upstream HTTP status and provider response content. No Inferock measurement envelope wraps the provider’s answer.</p>
+<p>So yes, our broken account lookup can still come back through the gateway with HTTP 200. The status code keeps its usual meaning; we add evidence you can use to judge the output separately.</p>
 <h2>Find the call and evidence</h2>
 <p>After the provider result, the gateway emits a measurement event. Open Calls and find <code>account-lookup-001</code>.</p>
 <p>Depending on what’s available, the <a href="https://inferock.ai/docs/receipts-ledger/">call details</a> can include the provider, model, request ID, attempt and failure class, timing, usage, linked findings, and redacted payload evidence.</p>
@@ -102,11 +101,10 @@ x-request-id: account-lookup-001
 <h2>Know what the failure proves</h2>
 <p>The missing field supports a structural failure finding. It doesn’t explain why the model omitted it, prove that another prompt would have prevented it, or tell us what happened inside the provider’s infrastructure.</p>
 <p>And a response with every required field isn’t automatically correct. The model could return the wrong customer’s account ID and pass this schema just fine. Your application may still need authorization checks, database verification, or other business rules before using it.</p>
-<p>“All the fields are here” is not the same as “please proceed with confidence.”</p>
 <p>Inferock’s <a href="https://inferock.ai/methodology/">measurement methodology</a> separates objective failures, signals that need thresholds, and flags that need review. A missing required argument belongs in the first category when the schema and response evidence support it.</p>
 <p>Other claims need different evidence. A latency complaint needs a service expectation to compare against. A factuality claim needs ground truth. Putting them on the same dashboard doesn’t magically give them the same certainty.</p>
 <p>There’s another boundary to check: did the request reach the model at all?</p>
-<p>Inferock’s admission controls run after authentication and before the provider call. A rejected payload or exhausted quota doesn’t create a provider-loss measurement. The <a href="https://inferock.ai/docs/limits/">limits guide</a> explains the error reasons and recovery guidance.</p>
+<p>Inferock’s admission controls run after authentication and before the provider call. A rejected payload or exhausted quota doesn’t create a provider loss measurement. The <a href="https://inferock.ai/docs/limits/">limits guide</a> explains the error reasons and recovery guidance.</p>
 <p>That matters during an incident. A request rejected before inference and a completed provider response with invalid arguments are different failures. They need different fixes.</p>
 <p>In our account lookup, we have a provider result and an output contract violation, so we can investigate the returned arguments. If admission had rejected the request instead, blaming the model would send us off debugging a response that never existed.</p>
 <p>One generic error counter tends to blur all of this together. Very efficient at telling you something happened. Less impressive at telling you what.</p>
@@ -114,7 +112,7 @@ x-request-id: account-lookup-001
 <p>Calls lets you inspect the individual request. Proof holds the finding evidence. Home summarizes the reporting period.</p>
 <p>The <a href="https://inferock.ai/docs/receipts-ledger/">receipt guide</a> documents states such as “No data yet,” “Partial data,” and “Verified,” along with the standard version and receipt generation time. Those details help you read a summary without pretending every number on the screen is equally established.</p>
 <p>For engineers, the useful part is the path back to the request. An aggregate can tell you there’s a problem. The evidence underneath helps you decide what to change.</p>
-<p>A measured failure also doesn’t automatically qualify for credits on failure. Eligibility is a separate decision under the applicable <a href="https://inferock.ai/docs/credit-promise/">credit terms</a>. The technical finding and the remedy status need to stay separate, however tempting it is to turn them into one convenient badge.</p>
+<p>A measured failure also doesn’t automatically qualify for failure credit. Eligibility is a separate decision under the <a href="https://inferock.ai/docs/credit-promise/">credit promise</a> and the terms that apply to your account. The technical finding and the remedy status need to stay separate, however tempting it is to turn them into one convenient badge.</p>
 <p>Back to our account lookup.</p>
 <p>We started with a green status and a tool that couldn’t run. Now we have a request ID connecting the application event to the call, a declared requirement, a response that breaks it, and an explanation another engineer can inspect.</p>
 <p>That’s enough to start doing useful work: check the tool definition and request construction, examine affected calls, and verify whether a change fixes the same failure.</p>

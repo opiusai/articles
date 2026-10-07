@@ -1,6 +1,6 @@
 # Platform publishing copies
 
-These are publishing exports of the updated article, not confirmation that it has been posted. The full article keeps the supplied wording, except one em dash changed to a comma to follow the established punctuation preference. The unmodified supplied draft is preserved in `../source/updated-article-supplied.md`.
+These are publishing exports of the updated article, not confirmation that it has been posted. The full article uses the compliance-updated supplied content without prose changes. That exact draft is preserved in `../source/compliance-updated-article-supplied.md`. The prior revision remains in `../source/updated-article-supplied.md` for history.
 
 ## Shared formats
 

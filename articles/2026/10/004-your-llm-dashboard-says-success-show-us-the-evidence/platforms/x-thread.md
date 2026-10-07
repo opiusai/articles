@@ -21,7 +21,7 @@ Valid JSON and valid tool arguments are different checks.
 
 If account_id is required by the declared schema, an object without it fails that contract.
 
-No debate about whether the response seemed helpful. No vibes-based adjudication.
+No debate about whether the response seemed helpful. No adjudication by vibes.
 ```
 
 ## Post 3
@@ -32,7 +32,7 @@ The requirement has to be declared. Your app also has to enforce it before execu
 
 A failure record helps explain what happened. It doesn't replace validation.
 
-Observability is not a permission slip to run broken inputs.
+Reject invalid arguments before executing the tool.
 ```
 
 ## Post 4
@@ -59,7 +59,7 @@ The illustration shows this relationship, not a measured customer call.
 
 ```text
 6/10
-Missing account_id proves a structural failure when the schema and response support it.
+Missing account_id supports a structural failure finding when the schema and response evidence support it.
 
 It doesn't explain the provider's internals. It also doesn't prove that an ID which passes the schema belongs to the right customer.
 
@@ -85,7 +85,7 @@ One dashboard doesn't make them equally certain.
 8/10
 Did the request reach the model at all?
 
-Inferock's admission controls run before the provider call. A rejected payload or exhausted quota isn't a provider response failure.
+Inferock's admission controls run after authentication, before the provider call. A rejected payload or exhausted quota doesn't create a provider loss measurement.
 
 Blaming the model here means debugging a response that never existed.
 ```
@@ -98,7 +98,7 @@ Calls: inspect the request.
 Proof: examine finding evidence.
 Home: read the period summary.
 
-A measured failure doesn't automatically qualify for credits on failure. Eligibility follows the applicable terms.
+A measured failure doesn't automatically qualify for failure credit. Eligibility follows the credit promise and your account's terms.
 
 Keep the finding and remedy status separate.
 ```
