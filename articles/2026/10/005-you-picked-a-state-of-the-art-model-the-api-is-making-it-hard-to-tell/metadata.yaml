@@ -1,9 +1,9 @@
 id: "005"
-title: "You Picked a State-of-the-Art Model. The API Is Making It Hard to Tell."
+title: "You Picked a State of the Art Model. The API Is Making It Hard to Tell."
 slug: "you-picked-a-state-of-the-art-model-the-api-is-making-it-hard-to-tell"
 archive_month: "2026-10"
 publication_date: null
-status: "draft"
+status: "final"
 
 published:
   dev: null
@@ -26,3 +26,4 @@ notes:
   - "Images are conceptual editorial illustrations, not product screenshots or performance evidence."
   - "Publication dates and external publication URLs have not been supplied."
   - "Reviewed and adopted the supplied human rewrite; raw source preserved in source/human-rewrite-supplied.md. Both images restored and one caption em dash replaced with a sentence break."
+  - "Authoritative final-check draft adopted verbatim and preserved in source/final-check-supplied.md. Marked final without implying external publication; stable article and media paths retained."
