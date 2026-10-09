@@ -32,3 +32,8 @@ The Pages workflow copies only `media/` directories into its deployment artifact
 
 - `articles/2026/10/004-your-llm-dashboard-says-success-show-us-the-evidence/`
 - Updated user-supplied article following one tool call through Inferock Watch, Calls, and Proof, with a 5:2 header and an in-article evidence illustration. Shared rich-text copies for Medium, LinkedIn and X Articles, a Hashnode Markdown body, and a condensed X thread are in its `platforms/` directory. Article text remains in the archive; the images are served through GitHub Pages.
+
+## Article 5
+
+- `articles/2026/10/005-you-picked-a-state-of-the-art-model-the-api-is-making-it-hard-to-tell/`
+- Reviewed user-supplied rewrite covering the 19 proposed Baseline quality requirements, with a header and quality-route illustration. Publication status is not yet supplied.

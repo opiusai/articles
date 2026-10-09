@@ -1,0 +1,28 @@
+id: "005"
+title: "You Picked a State-of-the-Art Model. The API Is Making It Hard to Tell."
+slug: "you-picked-a-state-of-the-art-model-the-api-is-making-it-hard-to-tell"
+archive_month: "2026-10"
+publication_date: null
+status: "draft"
+
+published:
+  dev: null
+  medium: null
+  hashnode: null
+  huggingface: null
+  linkedin: null
+  x: null
+
+media:
+  - file: "media/hero.png"
+    purpose: "Article title header, with main content arranged in a centered 5:2 crop-safe area"
+  - file: "media/quality-route.png"
+    purpose: "Conceptual illustration of five groups of quality checks along an inference route"
+
+notes:
+  - "Draft discusses all 19 Baseline quality requirements, grouped around the experience of an illustrative document assistant."
+  - "The Baseline is a proposed qualification standard and supplies no completed route assessment; requirements and targets are not represented as achieved results."
+  - "Sources reviewed on 2026-10-09; no live route assessment or gateway benchmark was performed."
+  - "Images are conceptual editorial illustrations, not product screenshots or performance evidence."
+  - "Publication dates and external publication URLs have not been supplied."
+  - "Reviewed and adopted the supplied human rewrite; raw source preserved in source/human-rewrite-supplied.md. Both images restored and one caption em dash replaced with a sentence break."

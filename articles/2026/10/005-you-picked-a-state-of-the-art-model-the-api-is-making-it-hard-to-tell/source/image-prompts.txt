@@ -1,0 +1,27 @@
+Generator: built-in image_gen
+Reference: Article 4 media/hero-full-size.png, for brand and visual style only.
+
+HEADER
+Use case: ads-marketing. Generate a NEW editorial TITLE HEADER for an Inferock developer article. Reference image is BRAND/STYLE ONLY, do not reproduce old headline or old HTTP200 document layout. Wide 16:9 full-size canvas. Keep all major content inside a centered horizontal 5:2 safe rectangle, with generous padding; above/below this rectangle only decorative white background so it is safe to crop for social. White-dominant background, very faint blue architectural grid, subtle pale blue glow, navy #080D28, electric blue #087BFF, tiny pink #D82C83 accents. Small accurately preserved pink folded Inferock mark and navy wordmark in upper left INSIDE the safe area. No engineering tag.
+Exact headline, perfectly left aligned in four balanced bold sans-serif lines:
+"You Picked a"
+"State-of-the-Art Model."
+"The API Is Making It"
+"Hard to Tell."
+No literal outer quotation marks. Render every word and hyphen exactly, no missing letters. Left block occupies about 65% width with all four lines using a consistent left edge, careful kerning and no tilted baseline. First two lines navy, last two lines navy with Hard to Tell blue. Typography readable, no collisions, no clipping, moderate size to fit safe area.
+Right 27%: refined conceptual illustration of a precise luminous blue geometric model core (small faceted lattice-like object, no brain or robot) connected through an outlined rounded gateway to a small response panel. The thin blue route has a small pink interruption or bottleneck inside the gateway, and the final panel contains incomplete navy lines with one subtle pink outlined gap. Convey strong model and imperfect serving path indirectly. Compact horizontal grouping rather than tall stack. No fake statistics, no score badges, no checkmarks implying qualification, no dollar signs, no dashboard screenshot. Only title and Inferock text. Match the polished crisp vector-like raster design and restraint of reference. Minimal but with sufficient meaningful content.
+
+IN-ARTICLE ILLUSTRATION
+Use case: illustration-story. Create a NEW in-article editorial illustration for Inferock matching reference STYLE ONLY. Wide landscape 16:9, white dominant, very faint blue grid, restrained pale blue glow, navy typography #080D28, electric blue #087BFF connections, tiny pink #D82C83 accents. Preserve small Inferock pink folded mark and navy wordmark in upper left.
+Concept: quality must be examined across the whole inference route, not only at the model. A small crisp faceted blue geometric model core at far left, one blue horizontal routing line across middle ending at an elegant white response card at far right. Along the route five beautifully spaced compact inspection windows, labels exactly: "Output", "Latency", "Behavior", "Integrity", "Identity". Labels equal hierarchy, crisp readable navy. Each window contains a subtle distinct icon/exemplar: intact braces plus a tiny missing-slot outline; a small three-mark timing trace; two overlapping reference waveforms; linked operation records; a pinned model tag. Two tiny pink highlights indicate things to inspect, NOT measured failures. The final response card carries a few navy lines, no giant headline. Visual emphasis the connected quality checks, with moderate detail and elegant spacing. Use no table, no numbered steps, no green pass badges, no grades or made-up numbers, no shields implying privacy certification, no billing dollar focus, no robot/brain art. Do not word out the moral. This is a conceptual editorial graphic, not a screenshot or achieved route assessment. Keep everything well aligned and avoid empty excess.
+
+HEADER SPACING CORRECTION
+Edit this header only to improve spacing and crop safety. Keep exact title, Inferock logo/wordmark, white grid/pale blue background, navy and blue colors and model-to-gateway-to-response illustration. Keep full-size 16:9 canvas.
+MANDATORY: all important pixels inside centered 5:2 safe band. For current 1672x941 image, safe band is y136..805; place logo wholly between y160..220, title between y275..700, illustration wholly between y300..700. Move existing top-left logo DOWN into that band. Only decorative background above y136 and below y805.
+Reduce headline font slightly to allow a clear gutter: all text left edge x90, right edge no farther than x940. Keep four left-aligned lines exactly:
+You Picked a
+State-of-the-Art Model.
+The API Is Making It
+Hard to Tell.
+Include real clear word spaces, no merged words, exact punctuation and hyphens. Last line blue, other lines navy. Move/scale the illustration into x1040..1590 so it does not touch title. Preserve meaningful illustration detail and finish. Do not add content, labels, borders or crop guides. Change only placement and scale to fix safe-area compliance and legibility.
+
